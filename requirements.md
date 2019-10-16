@@ -29,3 +29,24 @@ Log in to the Oracle Container Registry website at https://container-registry.or
 Use the web interface to navigate to the Container Services business area and accept the Oracle Standard Terms and Restrictions for the Oracle software images that you intend to deploy. You are able to accept a global agreement that applies to all of the existing repositories within this business area. If newer repositories are added to this business area in the future, you may need to accept these terms again before performing upgrades.
 
 `docker login container-registry.oracle.com`
+
+5- Configure firewall
+
+`iptables -P FORWARD ACCEPT`
+
+`firewall-cmd --add-masquerade --permanent`
+
+`firewall-cmd --add-port=10250/tcp --permanent`
+
+`firewall-cmd --add-port=8472/udp --permanent`
+
+Additionally, run the following command on the master node:
+
+`firewall-cmd --add-port=6443/tcp --permanent`
+
+`systemctl restart firewalld`
+
+5- Disable SELinux
+
+`/usr/sbin/setenforce 0`
+
