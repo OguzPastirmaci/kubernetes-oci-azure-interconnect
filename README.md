@@ -1,19 +1,12 @@
-# kubernetes-oci-azure-interconnect
-
-# Kubernetes cluster spanning across Oracle Cloud Infrastructure and Microsoft Azure using the interconnect.
+# Kubernetes cluster spanning across Oracle Cloud Infrastructure and Microsoft Azure using the interconnect
 
 ## Solution Overview
 
 ### Audience and Business Problem Being Solved
 
-IT teams who operate data centers have long understood the value of standardizing on a smaller set of underlying components, including the operating system, to minimize operating costs and overhead. Customers and vendors alike have rallied around Kubernetes ahead of the alternatives, recognizing the value of an open (albeit somewhat complex) standard for container orchestration.
+Enterprises who operate data centers have long understood the value of standardizing on a smaller set of underlying components, including the operating system, to minimize operating costs and overhead. Customers and vendors alike have rallied around Kubernetes ahead of the alternatives, recognizing the value of an open (albeit somewhat complex) standard for container orchestration.
 
 As enterprises have adopted container technology, they too have recognized the opportunity to build on this open Kubernetes platform, as a way to ease their transition from on-premises applications to the cloud, avoid lock-in across cloud providers, and provide the future fabric for hybrid deployments and even serverless applications.
-
-The primary audiences of this solution guide are the IT administrators, machine learning engineers responsible for the cloud infrastructure and the data scientists interested in knowing the underlying architecture of infrastructure-as-a-service on top which their workloads run.
-
-
-### Top-Level Value Proposition
 
 As enterprises continue to evaluate the benefits of cloud, they are steadily adopting a multicloud strategy for various reasons, including disaster recovery, high availability, lower cost, and, most importantly, using the best services and solutions available in the market. To enable this diversification, customers interconnect cloud networks by using the internet, IPSec VPNs, or a cloud provider’s direct connectivity solution through the customer’s on-premises network. Interconnecting cloud networks can require significant investments in time, money, design, procurement, installation, testing, and operations, and it still doesn't guarantee a high-availability, redundant, low-latency connection.
 
@@ -30,4 +23,12 @@ Oracle and Microsoft have built a dedicated, high-throughput, low-latency, priva
 - Straightforward, one-time setup.
 - No intermediate service provider required to enable the connection.
 
+
+The primary audiences of this solution guide are the system and network administrators responsible for the cloud infrastructure.
+
+This guide will provide step-by-step instructions to deploy a Kubernetes cluster that spans across Oracle Cloud Infrastructure and Microsoft Azure using the OCI-Azure interconnect.
+
+### Top-Level Value Proposition
+
+This guide is a step-by-step walkthrough for configuring a Kubernetes cluster spanning across Oracle Cloud Infrastructure and Microsoft Azure using the network interconnection between Oracle Cloud Infrastructure and Microsoft Azure.
 
