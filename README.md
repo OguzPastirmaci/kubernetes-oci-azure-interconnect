@@ -26,9 +26,25 @@ Oracle and Microsoft have built a dedicated, high-throughput, low-latency, priva
 
 The primary audiences of this solution guide are the system and network administrators responsible for the cloud infrastructure.
 
-This guide will provide step-by-step instructions to deploy a Kubernetes cluster that spans across Oracle Cloud Infrastructure and Microsoft Azure using the OCI-Azure interconnect.
-
 ### Top-Level Value Proposition
 
 This guide is a step-by-step walkthrough for configuring a Kubernetes cluster spanning across Oracle Cloud Infrastructure and Microsoft Azure using the network interconnection between Oracle Cloud Infrastructure and Microsoft Azure.
 
+The Proof of Concept (PoC) environment consists of the following:
+
+1. A dedicated network connection between Oracle Cloud Infrastructure (OCI) and Microsoft Azure (interconnect) using FastConnect on OCI side and ExpressRoute on Microsoft Azure side
+2. Network configuration on OCI and Microsoft Azure
+3. Virtual machines running on OCI and Microsoft Azure
+4. Storage resources on OCI and Microsoft Azure
+5. Security recommendations
+6. Sample workload that will be deployed on the Kubernetes cluster
+
+### TCO Analysis
+
+This proof-of-concept environment is consisting of the following:
+
+1. A [FastConnect](https://cloud.oracle.com/en_US/fastconnect) circuit on Oracle Cloud Infrastructure
+2. An [ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/) circuit on Microsoft Azure
+3. 1 [Standard D4s v3](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv3-series-1) virtual machine running on Microsoft Azure as the Kubernetes master
+4. 1 [VM.GPU3.1](https://docs.cloud.oracle.com/iaas/Content/Compute/References/computeshapes.htm#virtualmachines) virtual machine running on OCI as a Kubernetes worker for GPU workloads
+5. 1 [VM.Standard2.4](https://docs.cloud.oracle.com/iaas/Content/Compute/References/computeshapes.htm#virtualmachines) virtual machine running on OCI as a Kubernetes worker for general purpose workloads
