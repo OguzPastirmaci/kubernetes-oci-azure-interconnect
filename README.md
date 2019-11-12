@@ -48,3 +48,12 @@ This proof-of-concept environment is consisting of the following:
 3. 1 [Standard D4s v3](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv3-series-1) virtual machine running on Microsoft Azure as the Kubernetes master
 4. 1 [VM.GPU3.1](https://docs.cloud.oracle.com/iaas/Content/Compute/References/computeshapes.htm#virtualmachines) virtual machine running on OCI as a Kubernetes worker for GPU workloads
 5. 1 [VM.Standard2.4](https://docs.cloud.oracle.com/iaas/Content/Compute/References/computeshapes.htm#virtualmachines) virtual machine running on OCI as a Kubernetes worker for general purpose workloads
+
+
+## Step by step instructions for deploying a GPU enabled cross-cloud Kubernetes cluster running on Oracle Cloud Infrastructure and Microsoft Azure
+
+### 1. [Configuring network](/blob/master/docs/network-setup.md)
+### 2. [Setting up the virtual machines](./blob/master/docs/kubeflow-setup.md)
+### 3. [Deploying a Kubernetes cluster](./blob/master/docs/kubernetes-setup.md)
+### 4. [Deploying Kubeflow](./blob/master/docs/kubeflow-setup.md)
+### 5. [Deploying the Kubeflow MPI Operator](./blob/master/docs/mpi-setup.md)
