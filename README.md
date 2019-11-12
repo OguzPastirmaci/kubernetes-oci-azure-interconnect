@@ -53,7 +53,7 @@ This proof-of-concept environment is consisting of the following:
 ## Step by step instructions for deploying a GPU enabled cross-cloud Kubernetes cluster running on Oracle Cloud Infrastructure and Microsoft Azure
 
 ### 1. [Configuring network](/blob/master/docs/network-setup.md)
-### 2. [Setting up the virtual machines](./blob/master/docs/kubeflow-setup.md)
+### 2. [Setting up the virtual machines](./docs/kubeflow-setup.md)
 ### 3. [Deploying a Kubernetes cluster](./blob/master/docs/kubernetes-setup.md)
 ### 4. [Deploying Kubeflow](./blob/master/docs/kubeflow-setup.md)
 ### 5. [Deploying the Kubeflow MPI Operator](./blob/master/docs/mpi-setup.md)
