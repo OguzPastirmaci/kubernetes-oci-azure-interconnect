@@ -9,19 +9,19 @@ If you haven’t already done so please follow the [Deploying Kubeflow](./kubefl
 1. Clone the repository:
 
 ```console
-git clone https://github.com/kubeflow/mpi-operator.git
+$ git clone https://github.com/kubeflow/mpi-operator.git
 ```
 
 2. Change to repo directory:
 
 ```console
-cd mpi-operator
+$ cd mpi-operator
 ```
 
 3. Deploy the operator:
 
 ```console
-kubectl create -f deploy/mpi-operator.yaml
+$ kubectl create -f deploy/mpi-operator.yaml
 ```
 
 4. Check that the MPI Job custom resource is installed, the output should include mpijobs.kubeflow.org like the following:
@@ -38,12 +38,12 @@ mpijobs.kubeflow.org                       4d
 You can create an MPI job by defining an `MPIJob` config file. See [Tensorflow benchmark example](https://github.com/kubeflow/mpi-operator/blob/master/examples/v1alpha2/tensorflow-benchmarks.yaml) config file for launching a multi-node TensorFlow benchmark training job. You may change the config file based on your requirements.
 
 ```
-cat examples/v1alpha2/tensorflow-benchmarks.yaml
+$ cat examples/v1alpha2/tensorflow-benchmarks.yaml
 ```
 Deploy the `MPIJob` resource to start training:
 
 ```
-kubectl create -f examples/v1alpha2/tensorflow-benchmarks.yaml
+$ kubectl create -f examples/v1alpha2/tensorflow-benchmarks.yaml
 ```
 
 ## Monitoring an MPI Job
@@ -51,7 +51,7 @@ kubectl create -f examples/v1alpha2/tensorflow-benchmarks.yaml
 Once the `MPIJob` resource is created, you should now be able to see the created pods matching the specified number of GPUs. You can also monitor the job status from the status section. Here is sample output when the job is successfully completed.
 
 ```
-kubectl get -o yaml mpijobs tensorflow-benchmarks
+$ kubectl get -o yaml mpijobs tensorflow-benchmarks
 ```
 
 ```
