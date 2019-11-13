@@ -6,7 +6,7 @@ For more information on Kubeflow, visit [Kubeflow website](https://www.kubeflow.
 
 This guide creates a vanilla deployment of Kubeflow with all its core components without any external dependencies.
 
-This Kubeflow deployment requires a default StorageClass with a dynamic volume provisioner. this guide uses [Local Path Provisioner](https://github.com/rancher/local-path-provisioner).
+This Kubeflow deployment requires a default StorageClass with a dynamic volume provisioner. This guide uses [Local Path Provisioner](https://github.com/rancher/local-path-provisioner).
 
 In this setup, the directory /opt/local-path-provisioner will be used across all the nodes as the path for provisioning (a.k.a, store the persistent volume data). The provisioner will be installed in local-path-storage namespace by default.
 

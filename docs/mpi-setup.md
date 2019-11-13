@@ -4,7 +4,7 @@ This guide uses Kubeflow's [`mpi-operator`](https://github.com/kubeflow/mpi-oper
 
 ## Installation
 
-If you haven’t already done so please follow the [Deploying Kubeflow](./kubeflow.md) to deploy Kubeflow.
+If you haven’t already done so please follow the [Deploying Kubeflow](./kubeflow-setup.md) to deploy Kubeflow.
 
 1. Clone the repository:
 
@@ -25,6 +25,10 @@ $ kubectl create -f deploy/mpi-operator.yaml
 ```
 
 4. Check that the MPI Job custom resource is installed, the output should include mpijobs.kubeflow.org like the following:
+
+```console
+kubectl get crd
+```
 
 ```console
 NAME                                       AGE
