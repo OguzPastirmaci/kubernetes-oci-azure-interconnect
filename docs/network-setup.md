@@ -1,5 +1,13 @@
 # Configuring network
 
+----------
+**IMPORTANT:**
+This part of the guide is a work in progress. In the meantime, you can follow the instructions in the great blog post here:
+https://medium.com/@j.jamalarif/how-to-setup-the-interconnect-between-oracle-cloud-infrastructure-and-microsoft-azure-da359233e5e9
+
+-------
+
+
 As a reminder, here is a table that lists the comparable networking components involved in each side of the connection.
 
 ![](../images/network-components-table.png)
