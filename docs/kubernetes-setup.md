@@ -100,3 +100,6 @@ azure-k8s-worker   Ready    <none>   13m   v1.14.8
 oci-k8s-master     Ready    master   12m   v1.14.8
 oci-k8s-worker     Ready    <none>   13m   v1.14.8
 ```
+# Next Step
+
+After you finish deploying the Kubernetes cluster, continue to [deploying Kubeflow](./docs/kubeflow-setup.md)

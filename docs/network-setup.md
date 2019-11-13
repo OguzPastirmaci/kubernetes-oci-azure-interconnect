@@ -36,3 +36,7 @@ After the pre-requisites are completed, now you can create the interconnection b
 #### 4. Associate Network Security groups and Route table to Azure VNet
 
 #### 5. Configure OCI VCN Security Lists and Route Table
+
+# Next Step
+
+After you complete setting up the network, continue to [deploying the virtual machines](./docs/vm-deployment.md).

@@ -138,4 +138,6 @@ Check the resources deployed in namespace `kubeflow`:
 kubectl -n kubeflow get all
 ```
 
+# Next Step
 
+After you finish deploying Kubeflow, continue to [deploying the Kubeflow MPI Operator](./docs/mpi-setup.md)

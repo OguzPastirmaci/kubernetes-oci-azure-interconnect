@@ -31,7 +31,8 @@ The tutorial environment consists of the following resources. You can deploy vir
 ## Step by step instructions for deploying a GPU enabled cross-cloud Kubernetes cluster running on Oracle Cloud Infrastructure and Microsoft Azure
 
 ### 1. [Configuring network](./docs/network-setup.md)
-### 2. [Setting up the virtual machines](./docs/vm-setup.md)
+### 2. [Deploying the virtual machines](./docs/vm-deployment.md)
+### 3. [Configuring the virtual machines](./docs/vm-setup.md)
 ### 3. [Deploying a Kubernetes cluster](./docs/kubernetes-setup.md)
 ### 4. [Deploying Kubeflow](./docs/kubeflow-setup.md)
 ### 5. [Deploying the Kubeflow MPI Operator](./docs/mpi-setup.md)

@@ -187,3 +187,6 @@ Variables:   horovod
 ----------------------------------------------------------------
 total images/sec: 308.27
 ```
+
+# Next Step
+After you finish configuring the Kubeflow MPI Operator, continue to [donitoring GPUs with Prometheus and Grafana](./docs/monitoring-setup.md).
