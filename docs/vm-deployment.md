@@ -1,3 +1,5 @@
+# Deploying the virtual machines
+
 After your finished configuring the interconnect by using the instructions [in the guide here](../docs/network-setup.md), let's deploy the VMs that we will use as the Kubernetes master and workers.
 
 To keep this guide simple, we will deploy a Kubernetes cluster that has a single master and 2 worker nodes. To keep this guide cost effective, we will deploy the smallest GPU VMs available in OCI and Azure. You may want to change the size of the VMs depending on your needs.

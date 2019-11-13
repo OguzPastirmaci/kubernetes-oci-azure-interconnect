@@ -1,10 +1,10 @@
-# Work in progress
+# Configuring network
 
 As a reminder, here is a table that lists the comparable networking components involved in each side of the connection.
 
 ![](../images/network-components-table.png)
 
-# Pre-requisites
+# Prerequisite configuration
 
 ## Configuration on Azure
 
@@ -13,7 +13,7 @@ Create a resource > Networking > Virtual network
 
 #### 2. Create a Virtual Network Gateway
 
-#### 3. 
+#### 3. Create Virtual Network Gateway
 
 ## Configuration on Oracle Cloud Infrastructure
 
@@ -24,8 +24,9 @@ Menu > Networking > Virtual Cloud Networking > Create a Virtual Cloud Network
 
 Menu > Networking > Dynamic Routing Gateway > Create Dynamic Routing Gateway
 
+# Creating the interconnection between OCI and Azure
 
-After the pre-requisites are completed, now you can create the interconnection between OCI and Azure.
+After the prerequisites are completed, now you can create the interconnection between OCI and Azure.
 
 #### 1. Setup Azure ExpressRoute
 

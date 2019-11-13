@@ -1,4 +1,4 @@
-# MPI Operator
+# Deploying the Kubeflow MPI Operator
 
 This guide uses Kubeflow's [`mpi-operator`](https://github.com/kubeflow/mpi-operator) for scheduling MPI workloads in Kubernetes.
 
