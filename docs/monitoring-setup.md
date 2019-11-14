@@ -4,7 +4,7 @@ We will use [Prometheus](https://github.com/coreos/kube-prometheus) and [Grafana
 
 Firstly, we need to deploy [Helm](https://helm.sh/) in our cluster. Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 
-1. Switch to your `master` and run the following commands to create a service account named `tiller` for Helm:
+1. Switch to your `master` node and run the following commands to create a service account named `tiller` for Helm:
 ```sh
 kubectl create serviceaccount tiller --namespace kube-system
 ```
@@ -66,7 +66,7 @@ helm install gpu-helm-charts/kube-prometheus --name kube-prometheus --namespace 
 kubectl get -o jsonpath='{.spec.ports[0].nodePort}{"\n"}' services kube-prometheus-grafana -n monitoring
 ```
 
-You should get something similar to this:
+You should see something similar to this:
 
 ```console
 $ kubectl get -o jsonpath='{.spec.ports[0].nodePort}{"\n"}' services kube-prometheus-grafana -n monitoring
@@ -76,7 +76,9 @@ $ kubectl get -o jsonpath='{.spec.ports[0].nodePort}{"\n"}' services kube-promet
 
 8. Open a browser and go to `https://<your master node's external IP>:<port from previous step>`.
 
-9. In the Grafana homepage, click on **Home** in the upper left side and select **Nodes**.
+Example: `http://135.144.124.251:30902`
+
+9.  In the Grafana homepage, click on **Home** in the upper left side and select **Nodes**.
     
 10. You should see the metrics for your GPUs.
 

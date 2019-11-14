@@ -24,7 +24,9 @@ If you are not familiar with deploying VMs in OCI and Azure, follow the steps be
 Follow the steps below for deploying two VMs. 
 
 1. Launch the OCI console and open the navigation menu. Under **Core Infrastructure**, go to **Compute** and click **Instances**.
+   
 2. Click **Create Instance.**
+   
 3. On the Create Instance page, enter the following:
 
 - **Name your instance:** Enter `oci-k8s-master` for the first VM and then `oci-k8s-worker-1` for the second VM.
@@ -50,15 +52,23 @@ Leave the Use network security groups to control traffic option cleared.
 ## Deploying the VM in Azure
 
 1. Type **virtual machines** in the search.
+   
 2. Under **Services**, select **Virtual machines**.
+   
 3. In the **Virtual machines** page, select **Add**. The **Create a virtual machine** page opens.
+   
 4. In the **Basics** tab, under **Project details**, make sure the correct subscription is selected and then choose the same resource group with the ExpressRoute circuit you created.
+   
 5. Under **Instance details**, type `azure-k8s-worker-1` for the **Virtual machine name**, choose *East US* for your **Region**, and choose *Ubuntu 18.04 LTS* for your **Image**. Leave the other defaults.
+   
 6. Under **Administrator account**, select **SSH public key**, type `ubuntu` for your user name, then paste in your public key. Remove any leading or trailing white space in your public key.
+   
 7. In the **Networking** tab, select the **Virtual Network** and **Subnet** you created earlier in the [network setup guide](../docs/network-setup.md).
+   
 8. Leave the remaining defaults and then select the **Review + create** button at the bottom of the page.
-9. On the **Create a virtual machine** page, you can see the details about the VM you are about to create. When you are ready, select **Create**.
+   
+9.  On the **Create a virtual machine** page, you can see the details about the VM you are about to create. When you are ready, select **Create**.
 
 # Next Step
 
-After you finish deploying the VMs, continue to [configuring the virtual machines](./docs/vm-setup.md).
+After you finish deploying the VMs, continue to [configuring the virtual machines](../docs/vm-setup.md).

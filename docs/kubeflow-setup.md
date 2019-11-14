@@ -147,4 +147,4 @@ kubectl -n kubeflow get all
 
 # Next Step
 
-After you finish deploying Kubeflow, continue to [deploying the Kubeflow MPI Operator](./docs/mpi-setup.md).
+After you finish deploying Kubeflow, continue to [deploying the Kubeflow MPI Operator](..docs/mpi-setup.md).

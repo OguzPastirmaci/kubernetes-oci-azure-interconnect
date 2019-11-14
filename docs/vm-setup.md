@@ -1,6 +1,6 @@
 # Configuring the virtual machines
 
-Follow the steps below for configuring the VMs you deployed in the [previous step](./docs/../vm-deployment.md).
+Follow the steps below for configuring the VMs you deployed in the [previous step](../docs/vm-deployment.md).
 
 ## Disable swap
 Swap needs to be disabled  in order for the kubelet to work properly.
@@ -113,4 +113,4 @@ Use an editor (nano, vi etc.) to change the content of the `/etc/docker/daemon.j
 
 # Next Step
 
-After you finish configuring the VMs, continue to [deploying a Kubernetes cluster](./docs/kubernetes-setup.md).
+After you finish configuring the VMs, continue to [deploying a Kubernetes cluster](../docs/kubernetes-setup.md).

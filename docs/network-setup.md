@@ -48,4 +48,4 @@ After the prerequisites are completed, now you can create the interconnection be
 
 # Next Step
 
-After you complete setting up the network, continue to [deploying the virtual machines](./docs/vm-deployment.md).
+After you complete setting up the network, continue to [deploying the virtual machines](../docs/vm-deployment.md).
