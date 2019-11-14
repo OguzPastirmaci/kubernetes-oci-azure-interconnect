@@ -11,7 +11,7 @@ This Kubeflow deployment requires a default StorageClass with a dynamic volume p
 
 ## Deploying the Local Path Provisioner
 
-In this setup, the directory /opt/local-path-provisioner will be used across all the nodes as the path for provisioning (a.k.a, store the persistent volume data). The provisioner will be installed in local-path-storage namespace by default.
+In this setup, the directory `/opt/local-path-provisioner` will be used across all the nodes as the path for provisioning (a.k.a, store the persistent volume data). The provisioner will be installed in local-path-storage namespace by default.
 
 1. Deploy the provisioner:
 
