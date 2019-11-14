@@ -78,7 +78,7 @@ kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storagec
 2. Unpack the tar ball:
 
 ```console
-tar -xvf kfctl_v0.7.0_<platform>.tar.gz
+tar -xvf kfctl_v0.7.0_linux.tar.gz
 ```
 
 3. Create environment variables to make the deployment process easier:
