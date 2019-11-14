@@ -42,7 +42,7 @@ for node in $(kubectl get node --no-headers -o custom-columns=NAME:.metadata.nam
 done
 ```
 
-6. Install Helm charts:
+6. Install the Helm charts of **Prometheus Operator** and **kube-prometheus**:
 
 ```console
 helm repo add gpu-helm-charts https://nvidia.github.io/gpu-monitoring-tools/helm-charts
