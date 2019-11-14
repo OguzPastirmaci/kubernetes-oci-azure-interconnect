@@ -21,7 +21,7 @@ If you are not familiar with deploying VMs in OCI and Azure, follow the steps be
 
 ## Deploying the VMs in OCI
 
-Follow the steps below for deploying two VMs. 
+Follow the steps below twice for deploying two VMs. 
 
 1. Launch the OCI console and open the navigation menu. Under **Core Infrastructure**, go to **Compute** and click **Instances**.
    
@@ -31,13 +31,13 @@ Follow the steps below for deploying two VMs.
 
 - **Name your instance:** Enter `oci-k8s-master` for the first VM and then `oci-k8s-worker-1` for the second VM.
 
-- **Choose an operating system or image source:** Ubuntu 18.04
+- **Choose an operating system or image source:** Canonical Ubuntu 18.04
 
 - **Availability Domain:** Accept the default.
 
 - **Instance Type:** Accept the default, Virtual Machine.
 
-- **Instance Shape:** Choose `VM.Standard2.4` for `oci-k8s-master` and choose `VM.GPU3.1` for `oci-k8s-worker-1`. Choose `VM.Standard2.4` for `oci-k8s-master` and choose `VM.GPU3.1` for `oci-k8s-worker-1`.
+- **Instance Shape:** Choose `VM.Standard2.4` for `oci-k8s-master` and choose `VM.GPU3.1` for `oci-k8s-worker-1`.
 
 - **Virtual cloud network compartment:** Select the compartment containing the cloud network that you created.
 - **Virtual cloud network:** Select the cloud network that you created.
@@ -59,7 +59,7 @@ Leave the Use network security groups to control traffic option cleared.
    
 4. In the **Basics** tab, under **Project details**, make sure the correct subscription is selected and then choose the same resource group with the ExpressRoute circuit you created.
    
-5. Under **Instance details**, type `azure-k8s-worker-1` for the **Virtual machine name**, choose *East US* for your **Region**, and choose *Ubuntu 18.04 LTS* for your **Image**. Leave the other defaults.
+5. Under **Project details**, type `azure-k8s-worker-1` for the **Virtual machine name**, choose *(US) East US* for your **Region**, choose *Ubuntu 18.04 LTS* for your **Image**, and choose **Standard NC6_Promo** for size. Leave the other defaults.
    
 6. Under **Administrator account**, select **SSH public key**, type `ubuntu` for your user name, then paste in your public key. Remove any leading or trailing white space in your public key.
    

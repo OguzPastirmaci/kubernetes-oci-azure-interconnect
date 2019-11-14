@@ -95,7 +95,7 @@ kubeadm join 10.0.2.24:6443 --token <some token> \
     --discovery-token-ca-cert-hash sha256:<some hash>
 ```
 
-Run the `kubeadm join` command in all of your worker nodes.
+Run the `kubeadm join` command in all of your worker nodes (**oci-k8s-worker-1** and **azure-k8s-worker-1**).
 
 8. Switch to master and run `kubectl get nodes` to check if all worker nodes are added:
 
