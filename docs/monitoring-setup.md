@@ -2,7 +2,7 @@
 
 We will use [Prometheus](https://github.com/coreos/kube-prometheus) and [Grafana](https://github.com/grafana/grafana) for monitoring our Kubernetes cluster with GPUs.
 
-Firstly, we need to deploy [Helm](https://helm.sh/) in our cluster. Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
+Firstly, we need to deploy [Helm](https://helm.sh/) in our cluster. Helm is the package manager for Kubernetes. Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 
 1. Switch to your `master` node and run the following commands to create a service account named `tiller` for Helm:
 ```sh
