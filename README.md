@@ -18,8 +18,6 @@ You must enroll in the preview by completing this short [survey form](https://fo
 
 You will receive an email back once your subscription has been enrolled. You aren't able to use the capability until you receive a confirmation email. You may also contact your Microsoft representative to be enabled for this preview. Access to the preview capability is subject to availability and restricted by Microsoft in its sole discretion. Completion of the survey does not guarantee access.
 
-**IMPORTANT:** This guide does not use [Kubernetes Federation](https://github.com/kubernetes-sigs/kubefed). Kubernetes Federation is currently alpha and moving rapidly toward its initial beta release. The cluster resources in this guide are deployed to OCI and Azure using a dedicated virtual circuit between OCI and Azure called interconnect.
-
 This guide will walk you through deploying a cross-cloud Kubernetes cluster running on OCI and Azure using the interconnect. 
 
 This guide also has instructions for deploying GPU-enabled virtual machines as Kubernetes workers, configuring them for Kubernetes, configuring the Kubernetes cluster for running MPI jobs, and setting up GPU monitoring.
