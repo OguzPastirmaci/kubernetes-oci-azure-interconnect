@@ -1,4 +1,4 @@
-# Monitoring GPUs with Prometheus and Grafana
+# Step 7: Monitoring GPUs with Prometheus and Grafana
 
 We will use [Prometheus](https://github.com/coreos/kube-prometheus) and [Grafana](https://github.com/grafana/grafana) for monitoring our Kubernetes cluster with GPUs.
 

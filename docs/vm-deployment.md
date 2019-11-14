@@ -1,4 +1,4 @@
-# Deploying the virtual machines
+# Step 2: Deploying the virtual machines
 
 After your finished configuring the interconnect by using the instructions [in the guide here](../docs/network-setup.md), let's deploy the VMs that we will use as the Kubernetes master and workers.
 

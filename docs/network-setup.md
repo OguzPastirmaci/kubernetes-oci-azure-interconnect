@@ -1,4 +1,4 @@
-# Configuring network
+# Step 1: Configuring network
 
 ----------
 **IMPORTANT:**

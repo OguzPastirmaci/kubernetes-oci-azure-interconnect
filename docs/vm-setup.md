@@ -1,4 +1,4 @@
-# Configuring the virtual machines
+# Step 3: Configuring the virtual machines
 
 Follow the steps below for configuring the VMs you deployed in the [previous step](../docs/vm-deployment.md).
 

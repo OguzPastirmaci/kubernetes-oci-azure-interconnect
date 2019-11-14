@@ -1,4 +1,4 @@
-# Deploying a Kubernetes cluster
+# Step 4: Deploying a Kubernetes cluster
 
 1. Add Kubernetes Signing Key
    
