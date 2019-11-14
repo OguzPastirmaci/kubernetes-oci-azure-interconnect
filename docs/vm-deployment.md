@@ -19,7 +19,6 @@ If you are familiar with deploying VMs in OCI and Azure, deploy 2 VMs in OCI and
 
 If you are not familiar with deploying VMs in OCI and Azure, follow the steps below:
 
-
 ## Deploying the VMs in OCI
 
 Follow the steps below for deploying two VMs. 

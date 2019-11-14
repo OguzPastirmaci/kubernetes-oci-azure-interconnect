@@ -54,14 +54,8 @@ sudo apt-get install docker-ce=5:18.09.9~3-0~ubuntu-bionic docker-ce-cli=5:18.09
 ```
 
 ```console
-sudo docker run hello-world
-```
-
-```console
 sudo systemctl enable docker
 ```
-
-
 
 ## Install Nvidia drivers
 If you have any nodes that have GPUs, you need to install the Nvidia drivers. If you are not planning to have any GPU nodes, you may skip this step.
@@ -101,9 +95,9 @@ sudo apt-get update && sudo apt-get install -y nvidia-docker2
 sudo systemctl restart docker
 ```
 
-```console
-sudo nano /etc/docker/daemon.json
-```
+You will need to enable the nvidia runtime as your default runtime on your node. We will be editing the docker daemon config file which is usually present at `/etc/docker/daemon.json`:
+
+Use an editor (nano, vi etc.) to change the content of the `/etc/docker/daemon.json` file to the following:
 
 ```sh
 {

@@ -44,7 +44,7 @@ You can create an MPI job by defining an `MPIJob` config file. See [Tensorflow b
 ```
 $ cat examples/v1alpha2/tensorflow-benchmarks.yaml
 ```
-Deploy the `MPIJob` resource to start training:
+1. Deploy the `MPIJob` resource to start training:
 
 ```
 $ kubectl create -f examples/v1alpha2/tensorflow-benchmarks.yaml
@@ -54,10 +54,13 @@ $ kubectl create -f examples/v1alpha2/tensorflow-benchmarks.yaml
 
 Once the `MPIJob` resource is created, you should now be able to see the created pods matching the specified number of GPUs. You can also monitor the job status from the status section. Here is sample output when the job is successfully completed.
 
+1. Run the following command to monitor the job status:
 ```
 $ kubectl get -o yaml mpijobs tensorflow-benchmarks
 ```
 
+2. You should see an output similar to following:
+   
 ```
 apiVersion: kubeflow.org/v1alpha2
 kind: MPIJob
@@ -145,12 +148,14 @@ status:
 ```
 
 
-Training should run for 100 steps and takes a few minutes on a GPU cluster. You can inspect the logs to see the training progress. When the job starts, access the logs from the `launcher` pod:
+3. Training should run for 100 steps and takes a few minutes on a GPU cluster. You can inspect the logs to see the training progress. When the job starts, access the logs from the `launcher` pod:
 
 ```
 PODNAME=$(kubectl get pods -l mpi_job_name=tensorflow-benchmarks,mpi_role_type=launcher -o name)
 kubectl logs -f ${PODNAME}
 ```
+
+4. You should see an output similar to this:
 
 ```
 TensorFlow:  1.14

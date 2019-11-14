@@ -8,13 +8,18 @@ This guide creates a vanilla deployment of Kubeflow with all its core components
 
 This Kubeflow deployment requires a default StorageClass with a dynamic volume provisioner. This guide uses [Local Path Provisioner](https://github.com/rancher/local-path-provisioner).
 
+
+## Deploying the Local Path Provisioner
+
 In this setup, the directory /opt/local-path-provisioner will be used across all the nodes as the path for provisioning (a.k.a, store the persistent volume data). The provisioner will be installed in local-path-storage namespace by default.
+
+1. Deploy the provisioner:
 
 ```console
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
 ```
 
-After installation, you should see something like the following:
+2. After installation, you should see something like the following:
 
 ```console
 $ kubectl -n local-path-storage get pod
@@ -22,7 +27,7 @@ NAME                                     READY     STATUS    RESTARTS   AGE
 local-path-provisioner-d744ccf98-xfcbk   1/1       Running   0          7m
 ```
 
-Create a hostPath backed Persistent Volume and a pod uses it:
+3. Create a hostPath backed Persistent Volume and a pod uses it:
 
 ```console
 kubectl create -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/examples/pvc.yaml
@@ -30,7 +35,7 @@ kubectl create -f https://raw.githubusercontent.com/rancher/local-path-provision
 kubectl create -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/examples/pod.yaml
 ```
 
-You should see the PV has been created:
+4. You should see the PV has been created:
 
 ```console
 $ kubectl get pv
@@ -38,7 +43,7 @@ NAME                                       CAPACITY   ACCESS MODES   RECLAIM POL
 pvc-bc3117d9-c6d3-11e8-b36d-7a42907dda78   2Gi        RWO            Delete           Bound     default/local-path-pvc   local-path               4s
 ```
 
-The PVC has been bound:
+5. The PVC has been bound:
 
 ```console
 $ kubectl get pvc
@@ -46,7 +51,7 @@ NAME             STATUS    VOLUME                                     CAPACITY  
 local-path-pvc   Bound     pvc-bc3117d9-c6d3-11e8-b36d-7a42907dda78   2Gi        RWO            local-path     16s
 ```
 
-And the Pod started running:
+6. And the Pod started running:
 
 ```console
 $ kubectl get pod
@@ -54,27 +59,29 @@ NAME          READY     STATUS    RESTARTS   AGE
 volume-test   1/1       Running   0          3s
 ```
 
-The pod was just for testing, so we can delete it:
+7. The pod was just for testing, so we can delete it:
 
 ```console
 kubectl delete -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/examples/pod.yaml
 ```
 
-We need to set this configuration as the default StorageClass:
+8. We need to set this configuration as the default StorageClass:
 
 ```console
 kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 ```
 
-Download the kfctl v0.7.0 release from the Kubeflow releases page: (https://github.com/kubeflow/kubeflow/releases/tag/v0.7.0)
+## Deploying Kubeflow
 
-Unpack the tar ball:
+1. Download the kfctl v0.7.0 release from the Kubeflow releases page: (https://github.com/kubeflow/kubeflow/releases/tag/v0.7.0)
+
+2. Unpack the tar ball:
 
 ```console
 tar -xvf kfctl_v0.7.0_<platform>.tar.gz
 ```
 
-Create environment variables to make the deployment process easier:
+3. Create environment variables to make the deployment process easier:
 
 ```sh
 # The following command is optional. It adds the kfctl binary to your path.
@@ -123,7 +130,7 @@ Notes:
   a local version of the configuration YAML file which you can further
   customize if necessary.
 
-To set up and deploy Kubeflow using the **default settings**,
+4. To set up and deploy Kubeflow using the **default settings**,
 run the `kfctl apply` command:
 
 ```
@@ -132,7 +139,7 @@ cd ${KF_DIR}
 kfctl apply -V -f ${CONFIG_URI}
 ```
 
-Check the resources deployed in namespace `kubeflow`:
+5. Check the resources deployed in namespace `kubeflow`:
 
 ```
 kubectl -n kubeflow get all
