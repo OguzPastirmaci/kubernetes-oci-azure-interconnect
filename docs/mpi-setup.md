@@ -152,6 +152,7 @@ status:
 
 ```
 PODNAME=$(kubectl get pods -l mpi_job_name=tensorflow-benchmarks,mpi_role_type=launcher -o name)
+
 kubectl logs -f ${PODNAME}
 ```
 
