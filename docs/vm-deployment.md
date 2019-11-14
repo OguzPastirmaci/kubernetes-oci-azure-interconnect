@@ -71,4 +71,4 @@ Leave the Use network security groups to control traffic option cleared.
 
 # Next Step
 
-After you finish deploying the VMs, continue to [configuring the virtual machines](../docs/vm-setup.md).
+After you finish deploying the VMs, continue to [Step 3: Configuring the virtual machines](../docs/vm-setup.md).

@@ -109,4 +109,4 @@ oci-k8s-worker     Ready    <none>   13m   v1.14.8
 ```
 # Next Step
 
-After you finish deploying the Kubernetes cluster, continue to [deploying Kubeflow](../docs/kubeflow-setup.md).
+After you finish deploying the Kubernetes cluster, continue to [Step 5: Deploying Kubeflow](../docs/kubeflow-setup.md).

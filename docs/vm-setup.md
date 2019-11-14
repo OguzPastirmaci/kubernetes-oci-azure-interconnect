@@ -113,4 +113,4 @@ Use an editor (nano, vi etc.) to change the content of the `/etc/docker/daemon.j
 
 # Next Step
 
-After you finish configuring the VMs, continue to [deploying a Kubernetes cluster](../docs/kubernetes-setup.md).
+After you finish configuring the VMs, continue to [Step 4: Deploying a Kubernetes cluster](../docs/kubernetes-setup.md).
