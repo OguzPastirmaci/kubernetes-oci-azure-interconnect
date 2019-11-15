@@ -68,5 +68,5 @@ The environment consists of the following resources. You can deploy virtual mach
 ### Step 3. [Configuring the virtual machines](./docs/vm-setup.md)
 ### Step 4. [Deploying a Kubernetes cluster](./docs/kubernetes-setup.md)
 ### Step 5. [Deploying Kubeflow](./docs/kubeflow-setup.md)
-### Step 6. [Deploying the Kubeflow MPI Operator](./docs/mpi-setup.md)
+### Step 6. [Deploying the Kubeflow MPI Operator and creating a Tensorflow MPI job](./docs/mpi-setup.md)
 ### Step 7. [Monitoring GPUs with Prometheus and Grafana](./docs/monitoring-setup.md)
