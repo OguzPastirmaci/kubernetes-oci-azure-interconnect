@@ -52,7 +52,7 @@ The environment consists of the following resources. You can deploy virtual mach
 4. 1 [VM.GPU3.1](https://docs.cloud.oracle.com/iaas/Content/Compute/References/computeshapes.htm#virtualmachines) virtual machine running on OCI as a Kubernetes worker for GPU workloads
 5. 1 [Standard NC6](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#nc-series) virtual machine running on Microsoft Azure as a Kubernetes worker for GPU workloads.
 
-![](./images/interconnect-diagram.png)
+![](./images/k8s-interconnect-diagram.png)
 
 | Cloud Provider | VM name            | VM shape (size) | Region            |
 | -------------- | ------------------ | --------------- | ----------------- |
